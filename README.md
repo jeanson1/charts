@@ -6,11 +6,33 @@ You know, for Kubernetes.
 
 Get the latest [Helm release](https://github.com/kubernetes/helm).
 
-## Install Charts
+## Add Repo
 
-You need to add this Chart repo to Helm:
+The following command allows you to download and install all the charts from this repository:
 
 ```console
-helm repo add ionis https://charts.ioniscorporate.engineering
-helm repo update
+$ helm repo add ioniscorporate https://charts.ioniscorporate.engineering
+$ helm repo update
+```
+
+## Install a chart
+
+Once you have installed the Helm client, you can deploy a IONIS CORPORATE Helm Chart into a Kubernetes cluster.
+
+**View available charts:**
+
+```console
+$ helm search repo
+```
+
+**Install a chart:**
+
+```console
+$ helm install my-release ioniscorporate/<PACKAGE_NAME>
+```
+
+**Upgrade your application:**
+
+```console
+$ helm upgrade
 ```
