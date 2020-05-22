@@ -11,8 +11,8 @@ Get the latest [Helm release](https://github.com/kubernetes/helm).
 The following command allows you to download and install all the charts from this repository:
 
 ```console
-$ helm repo add ioniscorporate https://charts.ioniscorporate.engineering
-$ helm repo update
+helm repo add ioniscorporate https://charts.ioniscorporate.engineering
+helm repo update
 ```
 
 ## Install a chart
@@ -22,17 +22,17 @@ Once you have installed the Helm client, you can deploy a IONIS CORPORATE Helm C
 **View available charts:**
 
 ```console
-$ helm search repo
+helm search repo
 ```
 
 **Install a chart:**
 
 ```console
-$ helm install my-release ioniscorporate/<PACKAGE_NAME>
+helm install my-release ioniscorporate/<PACKAGE_NAME>
 ```
 
 **Upgrade your application:**
 
 ```console
-$ helm upgrade
+helm upgrade
 ```
